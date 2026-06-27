@@ -14,6 +14,19 @@ body {
     scroll-behavior: smooth;
 }
 
+.social-link {
+    padding: 0px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-link:visited,
+.social-link:hover,
+.social-link:active {
+    color: white;
+    text-decoration: none;
+}
+
 .logo {
     padding: 0px 30px;
     padding-bottom: 10px;
