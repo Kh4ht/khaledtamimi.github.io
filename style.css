@@ -31,15 +31,25 @@ body {
     padding: 15px 0px;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        justify-content: normal;
+        /* or unset */
+    }
+}
+
 .navbar a {
     color: white;
     margin-left: 15px;
     text-decoration: none;
+
     transition: all 0.2s;
 }
 
 .navbar a:hover {
     color: var(--accent);
+
     transition: all 0.2s;
 }
 
@@ -80,11 +90,13 @@ body {
     text-decoration: none;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.2) 8px 4px 8px;
+
     transition: all 0.2s;
 }
 
 .btn:hover {
     transform: scale(1.05);
+
     transition: all 0.2s;
 }
 
