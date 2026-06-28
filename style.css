@@ -32,6 +32,28 @@ body {
     padding-bottom: 10px;
 }
 
+h2 {
+    text-align: center;
+    font-family: 'Bitcount Ink', "Petr van Blokland";
+    font-size: 100px;
+
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "ROND" 0;
+}
+
+/* .doto-pixel {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "ROND" 0;
+} */
+
 /* NAVBAR */
 .navbar {
     position: fixed;
@@ -39,7 +61,7 @@ body {
     top: 0;
     width: 100%;
     background: linear-gradient(var(--bg-nav) 60%, rgba(0, 0, 0, 0) 100%);
-    justify-content: space-between;
+    /* justify-content: space-between; */
     display: flex;
     padding: 15px 0px;
     padding-bottom: 30px;
