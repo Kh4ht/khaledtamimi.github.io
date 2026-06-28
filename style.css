@@ -58,7 +58,7 @@ body {
 h2 {
     text-align: center;
     font-family: 'Bitcount Ink', "Petr van Blokland";
-    font-size: 100px;
+    font-size: clamp(2rem, 10vw, 100px);
 
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
