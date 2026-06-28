@@ -1,5 +1,8 @@
 :root {
-    --bg-body: #0f172a;
+    --bg-body1: #17274d;
+    --bg-body2: #45b7d1;
+    /* --bg-body4: #0f172a; */
+
     --bg-card: #1e293b;
     --bg-nav: #0a1e49;
     --accent: #38bdf8;
@@ -9,10 +12,30 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: var(--bg-body);
+    /* background: var(--bg-body); */
     color: white;
     scroll-behavior: smooth;
+
+    background: linear-gradient(270deg, var(--bg-body1), var(--bg-body2), var(--bg-body2), var(--bg-body1));
+    background-size: 400% 400%;
+    animation: gradientShift 30s ease infinite;
 }
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 
 .social-link {
     padding: 0px 20px;
@@ -60,7 +83,7 @@ h2 {
     align-items: center;
     top: 0;
     width: 100%;
-    background: linear-gradient(var(--bg-nav) 60%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(var(--bg-nav) 60%, transparent 100%);
     /* justify-content: space-between; */
     display: flex;
     padding: 15px 0px;
@@ -150,5 +173,5 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(0deg, var(--bg-nav) 90%, var(--bg-body) 100%);
+    background: linear-gradient(0deg, var(--bg-nav) 90%, transparent 100%);
 }
