@@ -1,0 +1,12 @@
+/* MOBILE PHONES */
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        justify-content: normal;
+        /* or unset */
+    }
+
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,3 +1,5 @@
+@import url(keyframes.css);
+
 :root {
     --bg-body1: #17274d;
     --bg-body2: #45b7d1;
@@ -101,22 +103,6 @@ h2 {
     padding-top: 150px;
 }
 
-/* PROJECT GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.column-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.column-container div {
-    margin: 10px;
-}
-
 .card {
     background: var(--bg-card);
     padding: 15px;
@@ -152,26 +138,6 @@ footer {
     background: linear-gradient(0deg, var(--bg-nav) 90%, transparent 100%);
 }
 
-/* MOBILE PHONES */
-@media (max-width: 768px) {
-    .navbar {
-        display: block;
-        justify-content: normal;
-        /* or unset */
-    }
-}
+
 
 /* KEYFRAMES */
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
