@@ -5,7 +5,9 @@
     --bg-body2: #45b7d1;
     /* --bg-body4: #0f172a; */
 
-    --bg-card: #1e293b;
+    --bg-card1: rgba(16, 20, 107, 0.5);
+    --bg-card2: rgba(72, 20, 175, 0.5);
+
     --bg-nav: #0a1e49;
     --accent: #38bdf8;
     --footer: #091d47;
@@ -22,6 +24,61 @@ body {
     background-size: 400% 400%;
     animation: gradientShift 30s ease infinite;
 }
+
+h2 {
+    text-align: center;
+    font-family: 'Bitcount Ink', "Petr van Blokland";
+    font-size: clamp(2rem, 10vw, 100px);
+
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "ROND" 0;
+}
+
+h3 a {
+    text-decoration: none;
+
+    transition: all 0.2s;
+}
+
+h3 a:visited,
+h3 a:hover,
+h3 a:active {
+    color: white;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: var(--accent);
+
+    transition: all 0.2s;
+}
+
+h3 i {
+    padding-right: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(0deg, var(--bg-nav) 90%, transparent 100%);
+}
+
+.card video {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
 
 .social-link {
     padding: 0px 20px;
@@ -41,19 +98,6 @@ body {
     padding-bottom: 10px;
 }
 
-h2 {
-    text-align: center;
-    font-family: 'Bitcount Ink', "Petr van Blokland";
-    font-size: clamp(2rem, 10vw, 100px);
-
-    font-family: "Doto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "ROND" 0;
-}
-
 /* .doto-pixel {
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
@@ -63,52 +107,7 @@ h2 {
         "ROND" 0;
 } */
 
-/* NAVBAR */
-.navbar {
-    position: fixed;
-    align-items: center;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(var(--bg-nav) 60%, transparent 100%);
-    /* justify-content: space-between; */
-    display: flex;
-    padding: 15px 0px;
-    padding-bottom: 30px;
-}
 
-.navbar a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-
-    transition: all 0.2s;
-}
-
-.navbar a:hover {
-    color: var(--accent);
-
-    transition: all 0.2s;
-}
-
-/* SECTIONS */
-.section {
-    padding: 100px 20px;
-    max-width: 90%;
-    margin: auto;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding-top: 150px;
-}
-
-.card {
-    background: var(--bg-card);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.2) 8px 4px 8px;
-}
 
 /* BUTTON */
 .btn {
@@ -131,12 +130,7 @@ h2 {
     transition: all 0.2s;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(0deg, var(--bg-nav) 90%, transparent 100%);
-}
+
 
 
 

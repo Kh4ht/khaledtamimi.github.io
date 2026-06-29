@@ -1,0 +1,39 @@
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(var(--bg-nav) 60%, transparent 100%);
+    /* justify-content: space-between; */
+    display: flex;
+    padding: 15px 0px;
+    padding-bottom: 30px;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+
+    transition: all 0.2s;
+}
+
+.navbar a:hover {
+    color: var(--accent);
+
+    transition: all 0.2s;
+}
+
+/* SECTIONS */
+.section {
+    padding: 100px 20px;
+    max-width: 90%;
+    margin: auto;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding-top: 150px;
+}
