@@ -2,6 +2,7 @@
 .navbar {
     position: fixed;
     align-items: center;
+    justify-content: center;
     top: 0;
     width: 100%;
     background: linear-gradient(var(--bg-nav) 60%, transparent 100%);
