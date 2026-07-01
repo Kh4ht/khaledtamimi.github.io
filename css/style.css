@@ -5,8 +5,8 @@
     --bg-body2: #45b7d1;
     /* --bg-body4: #0f172a; */
 
-    --bg-card1: rgba(16, 20, 107, 0.5);
-    --bg-card2: rgba(72, 20, 175, 0.5);
+    --bg-card1: rgba(16, 20, 107, 0.4);
+    --bg-card2: rgba(55, 3, 158, 0.2);
 
     --bg-nav: #0a1e49;
     --accent: #38bdf8;
@@ -38,20 +38,21 @@ h2 {
         "ROND" 0;
 }
 
-h3 a {
+a {
     text-decoration: none;
+    color: white;
 
     transition: all 0.2s;
 }
 
-h3 a:visited,
-h3 a:hover,
-h3 a:active {
+a:visited,
+a:hover,
+a:active {
     color: white;
     text-decoration: none;
 }
 
-h3 a:hover {
+a:hover {
     color: var(--accent);
 
     transition: all 0.2s;
