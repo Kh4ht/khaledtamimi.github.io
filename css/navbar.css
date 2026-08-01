@@ -26,6 +26,14 @@
     transition: all 0.2s;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        justify-content: normal;
+        /* or unset */
+    }
+}
+
 /* SECTIONS */
 .section {
     padding: 100px 20px;

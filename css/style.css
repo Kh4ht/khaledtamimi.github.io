@@ -1,23 +1,36 @@
 @import url(keyframes.css);
 
 :root {
-    --bg-body1: #17274d;
-    --bg-body2: #45b7d1;
-    /* --bg-body4: #0f172a; */
+    /* Main Colors */
 
-    --bg-card1: rgba(16, 20, 107, 0.4);
-    --bg-card2: rgba(55, 3, 158, 0.2);
+    --color1: #E3F2FD;
+    --color2: #90CAF9;
+    --color3: #61b8ff;
+    --color4: #2196F3;
+    --color5: #0D47A1;
+    --txt-color1: #0f0f0f;
 
-    --bg-nav: #0a1e49;
-    --accent: #38bdf8;
-    --footer: #091d47;
+
+    /* Variables for backgrounds and text */
+
+    --bg-body1: var(--color1);
+    --bg-body2: var(--color2);
+
+    --text: var(--txt-color1);
+
+    --bg-card1: var(--color3);
+    --bg-card2: #90CAF9;
+
+    --bg-nav: var(--color5);
+    --accent: var(--color4);
+    --footer: var(--color5);
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     /* background: var(--bg-body); */
-    color: white;
+    color: var(--text);
     scroll-behavior: smooth;
 
     background: linear-gradient(270deg, var(--bg-body1), var(--bg-body2), var(--bg-body2), var(--bg-body1));
@@ -40,7 +53,7 @@ h2 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--text);
 
     transition: all 0.2s;
 }
@@ -48,7 +61,7 @@ a {
 a:visited,
 a:hover,
 a:active {
-    color: white;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -66,7 +79,7 @@ h3 i {
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(0deg, var(--bg-nav) 90%, transparent 100%);
+    background: linear-gradient(0deg, var(--footer) 90%, transparent 100%);
 }
 
 .card video {
@@ -133,6 +146,8 @@ footer {
 
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 /* KEYFRAMES */

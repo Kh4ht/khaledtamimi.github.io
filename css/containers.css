@@ -10,6 +10,12 @@
     border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .column-container {
     display: flex;
     flex-direction: column;
